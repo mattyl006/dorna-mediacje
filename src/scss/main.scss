@@ -1,13 +1,43 @@
-@import "~normalize.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display&display=swap');
 
 @import "_variables";
-@import "modules/hello.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefefe;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2C3C7;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A1A5;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #fff;
+  color: #656565;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }

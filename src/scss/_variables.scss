@@ -1,1 +1,105 @@
-$wtf: #2D2241;
+// colors
+
+$white: #fff;
+$white_trans: rgba(255, 255, 255, 0.72);
+$white_more_trans: rgba(255, 255, 255, 0.4);
+
+$gray_800: #1A1A1A;
+$gray_700: #3B3B3B;
+$gray_600: #656565;
+$gray_400: #A1A1A1;
+$gray_300: #CDCDCD;
+$gray_200: #E6E6E6;
+$gray_100: #F1F1F1;
+
+$primary_800: #142C7E;
+$primary_500: #406FDB;
+$primary_200: #C6DDFF;
+$primary_100: #E2EFFF;
+
+$success_800: #1C4614;
+$success_500: #2CA5F0;
+$success_100: #DFF3FF;
+
+$warning_500: #E26139;
+
+$alert_800: #580F18;
+$alert_500: #BE2D2E;
+$alert_100: #FAE4E3;
+
+// effect styles
+
+$large_shadow: 0px 24px 40px rgba(26, 26, 26, 0.16);
+$small_shadow: 0px 4px 8px -4px rgba(26, 26, 26, 0.2);
+
+// fonts
+
+@mixin header_800 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  line-height: 62px;
+}
+
+@mixin header_700 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+@mixin header_600 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+@mixin header_500 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin header_400 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin header_300 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin header_200 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin header_100 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin subtitle {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin body_large {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body_medium {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin body_small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
