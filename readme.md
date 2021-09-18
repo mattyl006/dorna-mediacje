@@ -1,3 +1,3 @@
 # Dorna mediacje
 
-Free lance website project.
+Freelance website project.
