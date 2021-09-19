@@ -18,15 +18,23 @@
     background-color: variables.$gray_100;
     height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+
+    @media (max-width: 490px) {
+      justify-content: center;
+    }
   }
 
   &__link {
     @include variables.body_small;
     color: variables.$gray_600;
-    margin: 0 16px;
+    margin: 0 32px 0 16px;
     text-decoration: none;
+
+    @media (max-width: 360px) {
+      margin: 0 16px;
+    }
   }
 
   &__container {
