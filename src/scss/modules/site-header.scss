@@ -1,0 +1,66 @@
+@use "../variables";
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 140px;
+  z-index: 3;
+
+  &__top-bar {
+    order: -1;
+    width: 100%;
+    background-color: variables.$gray_100;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    @include variables.body_small;
+    color: variables.$gray_600;
+    margin: 0 16px;
+    text-decoration: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px;
+    height: 100px;
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__mediation {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 16px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: variables.$gray_700;
+  }
+
+  &__name {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: variables.$gray_700;
+  }
+}
