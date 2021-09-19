@@ -4,6 +4,7 @@
 @import "_variables";
 @import "modules/site-header";
 @import "modules/navigation";
+@import "modules/hero";
 
 html {
   box-sizing: border-box;
@@ -37,9 +38,15 @@ body {
   background: #fff;
   color: #656565;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
