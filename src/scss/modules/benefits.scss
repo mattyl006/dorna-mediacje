@@ -1,0 +1,75 @@
+@use "../variables";
+
+.benefits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: variables.$white;
+
+  &__header {
+    @include variables.body_medium;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @include variables.header_500;
+    margin: 0 0 64px 0;
+    max-width: 328px;
+    text-align: center;
+  }
+
+  &__list {
+    width: 100%;
+    margin: 0 0 24px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    width: 330px;
+    height: 198px;
+  }
+
+  &__item-header {
+    @include variables.header_500;
+    margin: 32px 0 16px;
+    color: variables.$gray_700;
+  }
+
+  &__paragraph {
+    @include variables.body_large;
+    color: variables.$gray_600;
+    width: 330px;
+  }
+
+  &__quote {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    max-width: 328px;
+    margin: 0 0 16px 0;
+  }
+
+  &__special {
+    color: variables.$success_500;
+  }
+
+  &__signature {
+    @include variables.body_large;
+    text-align: center;
+    margin: 0;
+  }
+}

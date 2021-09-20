@@ -46,6 +46,9 @@
     margin: 0 16px;
     height: 100px;
     position: relative;
+    @media (min-width: 490px) {
+      margin: 0 40px;
+    }
   }
 
   &__header {
