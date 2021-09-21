@@ -15,17 +15,21 @@
     cursor: pointer;
     z-index: 3;
     position: absolute;
-    top: 26px;
-    right: 0;
+    top: 64px;
+    right: 16px;
     border: solid 1px #0A0B11;
     padding: 12px 12px;
     border-radius: 4px;
 
+    @media (min-width: 490px) {
+      right: 40px;
+    }
+
     @media (max-width: 340px) {
       padding: 8px 8px;
       height: 34px;
-      top: 32px;
-      right: 0;
+      top: 72px;
+      right: 16px;
     }
 
     @media (min-width: 1440px) {
@@ -83,11 +87,11 @@
 
   &__list {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: variables.$white;
     box-shadow: 0 44px 40px rgb(26 26 26 / 16%);;
-    top: 80px;
-    left: -16px;
+    top: 140px;
+    left: 0;
     z-index: 2;
     width: 100vw;
     height: 336px;
