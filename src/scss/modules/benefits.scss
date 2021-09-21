@@ -12,6 +12,7 @@
     font-weight: 400;
     margin: 0 0 10px 0;
     text-transform: uppercase;
+    color: variables.$gray_600;
   }
 
   &__subtitle {
@@ -19,6 +20,7 @@
     margin: 0 0 64px 0;
     max-width: 328px;
     text-align: center;
+    color: variables.$gray_700;
   }
 
   &__list {
@@ -38,6 +40,11 @@
   &__image {
     width: 330px;
     height: 198px;
+
+    @media (max-width: 340px) {
+      width: 300px;
+      height: 180px;
+    }
   }
 
   &__item-header {
@@ -49,7 +56,11 @@
   &__paragraph {
     @include variables.body_large;
     color: variables.$gray_600;
-    width: 330px;
+    max-width: 330px;
+
+    @media (max-width: 400px) {
+      max-width: 300px;
+    }
   }
 
   &__quote {

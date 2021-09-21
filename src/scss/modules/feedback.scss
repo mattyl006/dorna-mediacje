@@ -1,0 +1,82 @@
+@use "../variables";
+
+.feedback {
+  width: 300vw;
+  display: flex;
+  overflow: hidden;
+  background-color: variables.$gray_100;
+  position: relative;
+  transition: transform 0.5s 0.1s ease-in-out;
+
+  &__switch-left, &__switch-right {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    background-image: url("../assets/icons/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 18px;
+    position: absolute;
+    top: calc(50% - 18px);
+    cursor: pointer;
+  }
+
+  &__switch-left {
+    transform: rotate(180deg);
+    left: calc(100vw + 10px);
+  }
+
+  &__switch-right {
+    right: calc(100vw + 10px);
+  }
+
+  &__element {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 44px 24px 64px;
+  }
+
+  &__paragraph {
+    margin: 0 0 12px 0;
+    max-width: 400px;
+    @include variables.header_400;
+    color: variables.$gray_700;
+    text-align: center;
+
+    &--last {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__signature {
+    margin: 0;
+    @include variables.body_large;
+    text-align: center;
+    color: variables.$gray_700;
+  }
+}
+
+.transform-right--js {
+  transform: translate(100vw);
+}
+
+.transform-left--js {
+  transform: translate(-100vw);
+}
+
+.hide--js {
+  display: none;
+}
+
+.move-right--js {
+  left: calc(200vw + 10px);
+}
+
+.move-left--js {
+  right: calc(200vw + 10px);
+}

@@ -1,5 +1,64 @@
 @use "../variables";
 
 .about {
+  width: 100%;
+  padding: 62px 16px 0;
+  background: variables.$gradient;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 
+  &__header {
+    @include variables.body_medium;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    color: variables.$gray_600;
+  }
+
+  &__photo {
+    order: -1;
+    width: 328px;
+    height: 400px;
+    margin: 0 0 48px 0;
+
+    @media (min-width: 440px) {
+      width: calc(328px + 10vw);
+      height: calc(400px + 10vw);
+    }
+
+    @media (max-width: 340px) {
+      width: 300px;
+      height: 380px;
+    }
+  }
+
+  &__subtitle {
+    @include variables.header_500;
+    margin: 0 0 16px 0;
+    color: variables.$gray_700;
+    max-width: 400px;
+  }
+
+  &__paragraph {
+    @include variables.body_medium;
+    color: variables.$gray_600;
+    margin: 0 0 16px 0;
+    max-width: 400px;
+  }
+
+  &__bolder {
+    margin: 0 0 62px 0;
+    @include variables.header_200;
+    color: variables.$gray_700;
+    max-width: 400px;
+
+    &--special {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid variables.$gray_200;
+    }
+  }
 }
