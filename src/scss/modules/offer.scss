@@ -1,0 +1,107 @@
+@use "../variables";
+
+.offer {
+  width: 100%;
+  padding: 42px 16px 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$white;
+
+  &__header {
+    @include variables.body_medium;
+    color: variables.$gray_600;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 100%;
+    max-width: 324px;
+  }
+
+  &__subtitle {
+    @include variables.header_500;
+    color: variables.$gray_700;
+    margin: 0 0 16px 0;
+    max-width: 328px;
+  }
+
+  &__paragraph {
+    @include variables.body_medium;
+    max-width: 328px;
+    margin: 0 0 76px 0;
+  }
+
+  &__article {
+    padding: 32px 14px;
+    border: 1px solid variables.$gray_200;
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    margin-bottom: 44px;
+    border-radius: 4px;
+    box-shadow: variables.$small_shadow;
+  }
+
+  &__title {
+    @include variables.header_700;
+    color: variables.$gray_700;
+    font-weight: 400;
+    max-width: 232px;
+    margin: 0 0 16px 0;
+  }
+
+  &__image {
+    order: -1;
+    width: 300px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+
+  &__label {
+    @include variables.body_large;
+    margin: 0 0 16px 0;
+    color: variables.$gray_700;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+  }
+
+  &__item {
+    padding-left: 26px;
+    margin-bottom: 12px;
+    @include variables.header_200;
+    font-weight: 600;
+    position: relative;
+    max-width: 264px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      background-image: url("../assets/icons/offer-dot.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 48px;
+    @include variables.header_300;
+    color: variables.$white;
+    background-color: variables.$success_500;
+    border-radius: 4px;
+  }
+}
