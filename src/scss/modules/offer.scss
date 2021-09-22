@@ -37,7 +37,8 @@
     border: 1px solid variables.$gray_200;
     display: flex;
     flex-direction: column;
-    width: 328px;
+    max-width: 328px;
+    width: 100%;
     margin-bottom: 44px;
     border-radius: 4px;
     box-shadow: variables.$small_shadow;
@@ -97,7 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     height: 48px;
     @include variables.header_300;
     color: variables.$white;

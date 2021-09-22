@@ -1,0 +1,99 @@
+@use "../variables";
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 16px 46px;
+
+  &__header {
+    text-align: center;
+    @include variables.body_medium;
+    color: variables.$gray_700;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    text-align: center;
+    @include variables.header_500;
+    color: variables.$gray_700;
+    margin: 0 0 30px 0;
+    max-width: 320px;
+  }
+
+  &__form {
+    margin: 0 0 60px 0;
+  }
+
+  &__form-container {
+    max-width: 328px;
+    margin-bottom: 32px;
+  }
+
+  &__label {
+    @include variables.header_300;
+    color: variables.$gray_700;
+    display: block;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+  }
+
+  &__input {
+    display: block;
+    width: 328px;
+    height: 48px;
+    padding: 12px 16px;
+    font-weight: 400;
+    border: 1px solid variables.$gray_300;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: variables.$gray_600;
+      @include variables.body_large;
+    }
+  }
+
+  &__textarea {
+    padding: 12px 16px;
+    border: 1px solid variables.$gray_300;
+    border-radius: 4px;
+    width: 328px;
+    height: 216px;
+    resize: none;
+
+    &::placeholder {
+      color: variables.$gray_600;
+      @include variables.body_large;
+    }
+  }
+
+  &__button {
+    width: 328px;
+    height: 48px;
+    color: variables.$white;
+    background-color: variables.$success_500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 16px 0;
+    border-radius: 4px;
+    border: none;
+  }
+
+  &__privacy {
+    @include variables.header_100;
+    margin: 0;
+    font-weight: 400;
+    color: variables.$gray_600;
+    max-width: 328px;
+  }
+
+  &__privacy-link {
+    font-weight: 600;
+    color: variables.$gray_700;
+  }
+}
