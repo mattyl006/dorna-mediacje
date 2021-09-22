@@ -107,6 +107,33 @@
     }
   }
 
+  &__container {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      padding: 50px 25px 0;
+      margin: 0 0 50px 0;
+      border-top: 1px solid variables.$gray_200;
+    }
+  }
+
+  &__article {
+    max-width: 350px;
+    margin: 0 20px;
+  }
+
+  &__article-header {
+    @include variables.header_300;
+    font-weight: 600;
+    margin: 0 0 32px 0;
+  }
+
+  &__article-paragraph {
+    @include variables.body_large;
+    font-weight: 400;
+    margin: 0;
+  }
+
   &__quote {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
