@@ -7,12 +7,31 @@
   align-items: center;
   background-color: variables.$white;
 
+  @media (min-width: 768px) {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 12px;
+      background-color: variables.$white;
+      position: absolute;
+      top: -11px;
+      left: 0;
+    }
+  }
+
   &__header {
     @include variables.body_medium;
     font-weight: 400;
     margin: 0 0 10px 0;
     text-transform: uppercase;
     color: variables.$gray_600;
+
+    @media (min-width: 768px) {
+      @include variables.body_large;
+    }
   }
 
   &__subtitle {
@@ -21,6 +40,12 @@
     max-width: 328px;
     text-align: center;
     color: variables.$gray_700;
+
+    @media (min-width: 768px) {
+      @include variables.header_600;
+      max-width: 420px;
+
+    }
   }
 
   &__list {
@@ -30,11 +55,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: 768px) {
+      width: auto;
+      display: grid;
+      grid-template-columns: 330px 330px;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 44px;
+      margin: 0 0 68px 0;
+    }
   }
 
   &__item {
     list-style: none;
     margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+    }
   }
 
   &__image {
@@ -57,6 +100,7 @@
     @include variables.body_large;
     color: variables.$gray_600;
     max-width: 330px;
+    margin: 0;
 
     @media (max-width: 400px) {
       max-width: 300px;
