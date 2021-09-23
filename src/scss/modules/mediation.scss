@@ -112,6 +112,19 @@
 
     @media (min-width: 768px) {
       width: 100%;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: variables.$success_100;
+        position: absolute;
+        bottom: 20%;
+        right: 15%;
+      }
     }
   }
 
