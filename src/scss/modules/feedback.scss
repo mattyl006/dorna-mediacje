@@ -48,6 +48,12 @@
     color: variables.$gray_700;
     text-align: center;
 
+    @media (min-width: 768px) {
+      @include variables.header_500;
+      margin: 0 0 24px 0;
+      max-width: 500px;
+    }
+
     &--last {
       margin-bottom: 32px;
     }
