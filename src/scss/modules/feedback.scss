@@ -12,24 +12,35 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
     background-image: url("../assets/icons/arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 10px;
     height: 18px;
-    position: absolute;
-    top: calc(50% - 18px);
-    cursor: pointer;
+
+    &--left {
+      transform: rotate(180deg);
+    }
   }
 
   &__switch-left {
-    transform: rotate(180deg);
-    left: calc(100vw + 10px);
+    left: calc(100vw - 5% + 20px);
   }
 
   &__switch-right {
-    right: calc(100vw + 10px);
+    right: calc(100vw - 5% + 20px);
   }
 
   &__element {
@@ -80,9 +91,9 @@
 }
 
 .move-right--js {
-  left: calc(200vw + 10px);
+  left: calc(200vw - 5% + 20px);
 }
 
 .move-left--js {
-  right: calc(200vw + 10px);
+  right: calc(200vw - 5% + 20px);
 }
