@@ -8,6 +8,10 @@
   flex-direction: column;
   padding: 0 16px 46px;
 
+  @media (min-width: 768px) {
+    z-index: 1;
+  }
+
   &__header {
     text-align: center;
     @include variables.body_medium;
