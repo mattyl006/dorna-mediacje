@@ -66,6 +66,11 @@
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     color: variables.$gray_700;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 38px;
+    }
   }
 
   &__name {
@@ -74,5 +79,10 @@
     letter-spacing: 10px;
     text-transform: uppercase;
     color: variables.$gray_700;
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      font-size: 10px;
+    }
   }
 }

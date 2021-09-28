@@ -603,16 +603,18 @@
             </label>
             <textarea class="contact__textarea" id="message" name="message" placeholder="Tutaj wpisz treść wiadomości"></textarea>
           </div>
-          <button class="contact__button" type="submit">
-            Wyślij
-          </button>
-          <p class="contact__privacy">
-            Po kliknięciu „Wyślij” Twoje dane będą przetwarzanie przez Dorna Mediacje w celu kontaktu
-            z Tobą i odpowiedzi na Twoje zapytanie zgodnie z zasadami zawartymi w
-            <a class="contact__privacy-link">
-              Polityce prywatności.
-            </a>
-          </p>
+          <div class="contact__privacy-container">
+            <button class="contact__button" type="submit">
+              Wyślij
+            </button>
+            <p class="contact__privacy">
+              Po kliknięciu „Wyślij” Twoje dane będą przetwarzanie przez Dorna Mediacje w celu kontaktu
+              z Tobą i odpowiedzi na Twoje zapytanie zgodnie z zasadami zawartymi w
+              <a class="contact__privacy-link">
+                Polityce prywatności.
+              </a>
+            </p>
+          </div>
         </form>
         <div class="contact__info">
           <div class="contact__container">
@@ -630,7 +632,7 @@
               <span>
                 ul. Piastów 3, lok.202
               </span>
-              <span>
+              <span class="contact__city-span">
                 64-920 Piła
               </span>
             </p>
@@ -647,11 +649,11 @@
               </span>
             </a>
             <p class="contact__paragraph">
-              <span>
-                ul. Piastów 3, lok.202
+              <span class="contact__tel-span">
+                t. 606 100 107
               </span>
               <span>
-                64-920 Piła
+                m. joanna.dorna@mediacje.pila.pl
               </span>
             </p>
           </div>
@@ -660,6 +662,11 @@
           </a>
         </div>
       </section>
+      <div class="contact__map-container">
+        <a class="contact__map">
+          <!-- map img -->
+        </a>
+      </div>
       <section class="footer">
         <div class="footer__menu">
           <p class="footer__header">
@@ -670,15 +677,17 @@
               Joanna Dorna
             </span>
           </p>
-          <a class="footer__link">
-            Mediacje
-          </a>
-          <a class="footer__link">
-            O mnie
-          </a>
-          <a class="footer__link">
-            Oferta
-          </a>
+          <div class="footer__container">
+            <a class="footer__link">
+              Mediacje
+            </a>
+            <a class="footer__link">
+              O mnie
+            </a>
+            <a class="footer__link">
+              Oferta
+            </a>
+          </div>
         </div>
         <div class="footer__bottom">
           <p class="footer__paragraph">

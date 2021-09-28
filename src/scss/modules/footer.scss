@@ -9,6 +9,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 36px 10px 36px 40px;
+    }
   }
 
   &__header {
@@ -17,6 +23,10 @@
     justify-content: center;
     align-items: center;
     margin: 0 0 36px 0;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
   }
 
   &__mediation {
@@ -27,6 +37,11 @@
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     color: variables.$gray_700;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 38px;
+    }
   }
 
   &__name {
@@ -35,6 +50,10 @@
     letter-spacing: 10px;
     text-transform: uppercase;
     color: variables.$gray_700;
+
+    @media (min-width: 768px) {
+      font-size: 10px;
+    }
   }
 
   &__link {
@@ -42,6 +61,10 @@
     font-weight: 400;
     margin-bottom: 20px;
     color: variables.$gray_700;
+
+    @media (min-width: 768px) {
+      margin: 0 15px;
+    }
   }
 
   &__bottom {
@@ -52,6 +75,13 @@
     justify-content: center;
     align-items: center;
     padding: 25px 40px 5px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 76px;
+    }
   }
 
   &__paragraph {
@@ -61,5 +91,10 @@
     font-weight: 400;
     color: variables.$gray_600;
     margin: 0 0 20px 0;
+
+    @media (min-width: 768px) {
+      max-width: none;
+      margin: 0;
+    }
   }
 }
