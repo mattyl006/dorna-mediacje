@@ -23,10 +23,38 @@
       bottom: -48px;
       right: 20%;
     }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 150px;
+
+      &:after {
+        bottom: 16px;
+        right: 40%;
+      }
+    }
+  }
+
+  &__image-container {
+    order: -1;
+
+    @media (min-width: 1440px) {
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: variables.$success_100;
+        position: absolute;
+        top: -10px;
+        right: -4px;
+        transform: rotate(45deg);
+      }
+    }
   }
 
   &__image {
-    order: -1;
     width: 328px;
     height: 320px;
 
@@ -44,6 +72,11 @@
       width: 330px;
       height: 400px;
     }
+
+    @media (min-width: 1440px) {
+      width: 550px;
+      height: 650px;
+    }
   }
 
   &__container {
@@ -52,6 +85,42 @@
 
     @media (min-width: 768px) {
       margin: 0 0 0 32px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-color: variables.$gray_100;
+        border-radius: 50%;
+        position: absolute;
+        top: -24px;
+        right: 86px;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      margin: 0 0 112px 86px;
+
+      &:before {
+        top: -52px;
+        right: 270px;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        bottom: -320px;
+        right: -32px;
+        background-image: url("../assets/img/hero-after.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
@@ -67,6 +136,10 @@
       text-align: start;
       @include variables.body_large;
     }
+
+    @media (min-width: 1440px) {
+      margin: 0 0 10px 6px;
+    }
   }
 
   &__subtitle {
@@ -79,6 +152,11 @@
     @media (min-width: 768px) {
       text-align: start;
       @include variables.header_700;
+    }
+
+    @media (min-width: 1440px) {
+      @include variables.header_800;
+      max-width: 584px;
     }
   }
 
@@ -96,6 +174,10 @@
     @media (min-width: 768px) {
       text-align: start;
       @include variables.body_large;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 584px;
     }
   }
 
@@ -116,5 +198,25 @@
     @media (min-width: 768px) {
       margin: 0;
     }
+  }
+
+  &__more {
+    display: none;
+    text-decoration: none;
+
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 16px;
+      left: 36px;
+    }
+  }
+
+  &__more-text {
+    @include variables.body_small;
+    color: variables.$gray_300;
+    margin: 0 16px 0 0;
   }
 }
