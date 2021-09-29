@@ -41,6 +41,11 @@
     position: absolute;
     top: 48px;
     right: 10%;
+
+    @media (min-width: 1440px) {
+      right: 32%;
+      top: 20px;
+    }
   }
 
   &__main {
@@ -166,6 +171,11 @@
     @media (min-width: 1440px) {
       width: auto;
       padding: 42px;
+
+      &:after {
+        bottom: -40px;
+        right: 60%;
+      }
     }
   }
 

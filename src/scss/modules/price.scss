@@ -175,6 +175,13 @@
           z-index: -1;
         }
       }
+
+      @media (min-width: 1440px) {
+        &:after {
+          top: 236px;
+          right: 96px;
+        }
+      }
     }
 
     @media (min-width: 768px) {

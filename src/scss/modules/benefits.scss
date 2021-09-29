@@ -82,6 +82,11 @@
     @media (min-width: 1440px) {
       @include variables.header_700;
       max-width: 568px;
+
+      &:after {
+        top: 0;
+        right: -360px;
+      }
     }
   }
 
@@ -132,6 +137,16 @@
       grid-template-rows: 1fr 1fr;
       column-gap: 40px;
       row-gap: 48px;
+
+      &:before {
+        top: 200px;
+        left: 160px;
+      }
+
+      &:after {
+        top: 40%;
+        right: 172px;
+      }
     }
   }
 
