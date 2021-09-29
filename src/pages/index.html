@@ -47,22 +47,22 @@
           </button>
           <ul class="navigation__list navigation__list--js">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#mediation">
                 Mediacje
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#about">
                 O mnie
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link" href="#offer">
                 Oferta
               </a>
             </li>
             <li class="navigation__item navigation__item--special">
-              <a class="navigation__link" href="#">
+              <a class="navigation__link navigation__link--special" href="#contact">
                 Porozmawiajmy
               </a>
             </li>
@@ -83,7 +83,7 @@
     <main class="main main--js">
 
       <!-- hero section  -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__container">
           <h2 class="hero__header">
             Mediacje
@@ -97,7 +97,7 @@
           <p class="hero__paragraph">
             Dobrowolne i poufne rozmowy prowadzone przez bezstronną i neutralną osobę.
           </p>
-          <a class="hero__link">
+          <a class="hero__link" href="#contact">
             Porozmawiajmy
           </a>
         </div>
@@ -109,7 +109,7 @@
                alt="Zdjęcie Pani Joanny przy biurku z dokumentami."/>
         </div>
       </section>
-      <a class="hero__more" href="#">
+      <a class="hero__more" href="#mediation">
         <p class="hero__more-text">
           Więcej
         </p>
@@ -117,7 +117,7 @@
       </a>
 
       <!-- mediation section -->
-      <section class="mediation">
+      <section class="mediation" id="mediation">
         <div class="mediation__main">
           <div class="mediation__content">
             <h2 class="mediation__header">
@@ -270,7 +270,7 @@
       </section>
 
       <!-- about section -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__main">
           <div class="about__container">
             <h2 class="about__header">
@@ -388,7 +388,7 @@
       </section>
 
       <!-- offer section -->
-      <section class="offer">
+      <section class="offer" id="offer">
         <h2 class="offer__header">
           Oferta
         </h2>
@@ -426,7 +426,7 @@
                   Sposób wykonywania władzy rodzicielskiej i wiele innych
                 </li>
               </ul>
-              <a class="offer__link">
+              <a class="offer__link" href="#contact">
                 Porozmawiajmy
               </a>
             </div>
@@ -455,7 +455,7 @@
                   O zadość uczynienie i wiele innych
                 </li>
               </ul>
-              <a class="offer__link">
+              <a class="offer__link" href="#contact">
                 Porozmawiajmy
               </a>
             </div>
@@ -485,7 +485,7 @@
                   i wiele innych
                 </li>
               </ul>
-              <a class="offer__link">
+              <a class="offer__link" href="#contact">
                 Porozmawiajmy
               </a>
             </div>
@@ -495,7 +495,7 @@
 
       <!-- price section -->
       <div class="price__background"></div>
-      <section class="price">
+      <section class="price" id="price">
         <h2 class="price__header">
           Cennik
         </h2>
@@ -596,7 +596,7 @@
       </section>
 
       <!-- contact section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="contact__header">
           Kontakt
         </h2>
@@ -635,7 +635,7 @@
             <p class="contact__privacy">
               Po kliknięciu „Wyślij” Twoje dane będą przetwarzanie przez Dorna Mediacje w celu kontaktu
               z Tobą i odpowiedzi na Twoje zapytanie zgodnie z zasadami zawartymi w
-              <a class="contact__privacy-link">
+              <a class="contact__privacy-link" target="_blank" href="privacy.html">
                 Polityce prywatności.
               </a>
             </p>
@@ -643,7 +643,7 @@
         </form>
         <div class="contact__info">
           <div class="contact__container">
-            <a class="contact__link">
+            <a class="contact__link" href="https://goo.gl/maps/HK464u72eShcaCMm8">
               <div class="contact__icon">
                 <div class="contact__icon-inner contact__icon-inner--location">
                   <!-- location icon -->
@@ -663,7 +663,7 @@
             </p>
           </div>
           <div class="contact__container">
-            <a class="contact__link">
+            <a class="contact__link" href="tel:+48606100107">
               <div class="contact__icon">
                 <div class="contact__icon-inner contact__icon-inner--telephone">
                   <!-- telephone icon -->
@@ -682,47 +682,47 @@
               </span>
             </p>
           </div>
-          <a class="contact__button contact__button--smaller">
+          <a class="contact__button contact__button--smaller" href="https://goo.gl/maps/HK464u72eShcaCMm8">
             Google Maps
           </a>
         </div>
       </section>
       <div class="contact__map-container">
-        <a class="contact__map">
+        <a class="contact__map" href="https://goo.gl/maps/HK464u72eShcaCMm8">
           <!-- map img -->
         </a>
       </div>
-      <section class="footer">
-        <div class="footer__menu">
-          <p class="footer__header">
+    </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <p class="footer__header">
             <span class="footer__mediation">
               Mediacje
             </span>
-            <span class="footer__name">
+          <span class="footer__name">
               Joanna Dorna
             </span>
-          </p>
-          <div class="footer__container">
-            <a class="footer__link">
-              Mediacje
-            </a>
-            <a class="footer__link">
-              O mnie
-            </a>
-            <a class="footer__link">
-              Oferta
-            </a>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__paragraph">
-            © Copyright Joanna Dorna 2021 — Wszystkie prawa zastrzeżone.
-          </p>
-          <a class="footer__paragraph">
-            Polityka prywatności
+        </p>
+        <div class="footer__container">
+          <a class="footer__link" href="#mediation">
+            Mediacje
+          </a>
+          <a class="footer__link" href="#about">
+            O mnie
+          </a>
+          <a class="footer__link" href="#offer">
+            Oferta
           </a>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__paragraph">
+          © Copyright Joanna Dorna 2021 — Wszystkie prawa zastrzeżone.
+        </p>
+        <a class="footer__paragraph" href="privacy.html">
+          Polityka prywatności
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

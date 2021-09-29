@@ -83,5 +83,12 @@ module.exports = {
       chunks: ["index", "hamburger", "feedback"],
       filename: "index.html",
     }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/privacy.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "privacy.html",
+    }),
   ],
 };

@@ -126,17 +126,14 @@
       margin: 0 15px;
 
       &--special {
-        padding: 10px 24px;
         margin: 0 0 0 calc(80px + 4vw);
-        border: 1px solid variables.$gray_700;
-        border-radius: 4px;
         position: relative;
 
         &:after {
           content: "";
           display: block;
           position: absolute;
-          top: 21px;
+          top: 12px;
           left: -86px;
           width: 62px;
           height: 1px;
@@ -154,9 +151,26 @@
     text-decoration: none;
     color: variables.$gray_700;
     @include variables.header_500;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: variables.$gray_300;
+    }
 
     @media (min-width: 1440px) {
       @include variables.body_large;
+
+      &--special {
+        padding: 10px 24px;
+        border: 1px solid variables.$gray_700;
+        border-radius: 4px;
+        transition: color, background-color 0.4s ease-in-out;
+
+        &:hover {
+          color: variables.$gray_300;
+          background-color: variables.$gray_700;
+        }
+      }
     }
   }
 }
