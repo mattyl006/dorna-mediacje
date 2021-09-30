@@ -80,6 +80,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 500vw;
+        height: 180px;
+        position: absolute;
+        bottom: -126px;
+        left: -1000px;
+        background-color: #DBE8EF;
+      }
     }
   }
 

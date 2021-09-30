@@ -58,13 +58,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
       margin-bottom: 88px;
     }
   }
 
   &__content {
     @media (min-width: variables.$desktop) {
-      margin-right: 24px;
+      margin-right: 32px;
     }
   }
 
@@ -102,7 +103,7 @@
       @include variables.header_700;
       text-align: start;
       margin: 0 0 30px 0;
-      max-width: 568px;
+      max-width: 572px;
     }
   }
 
