@@ -179,11 +179,21 @@
     }
   }
 
-  &__image {
+  &__image-294w {
     width: 330px;
     margin: 56px 0 98px;
 
     @media (min-width: variables.$tablet) {
+      display: none;
+    }
+  }
+
+  &__image-527w {
+    display: none;
+    margin: 56px 0 98px;
+
+    @media (min-width: variables.$tablet) {
+      display: block;
       width: 537px;
     }
 
