@@ -80,7 +80,7 @@
     }
   }
 
-  &__photo {
+  &__photo-328w {
     order: -1;
     width: 328px;
     height: 400px;
@@ -111,6 +111,18 @@
       }
 
       @media (min-width: variables.$desktop) {
+        display: none;
+      }
+    }
+  }
+
+  &__photo-567w {
+    display: none;
+    margin: 0 0 48px 0;
+
+    &--2 {
+      @media (min-width: variables.$desktop) {
+        display: block;
         width: 567px;
         height: 531px;
       }
