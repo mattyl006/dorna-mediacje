@@ -9,16 +9,16 @@
   align-items: center;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet) {
     padding: 0 40px 158px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: variables.$desktop) {
     padding-bottom: 286px;
   }
 
   &__background {
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       position: absolute;
       top: 7410px;
       left: 0;
@@ -28,7 +28,7 @@
       z-index: 0;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       top: 5892px;
     }
   }
@@ -42,12 +42,12 @@
     width: 100%;
     max-width: 324px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
       max-width: 746px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       text-align: center;
     }
   }
@@ -60,13 +60,13 @@
     width: 100%;
     max-width: 328px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_600;
       margin: 0 0 26px 0;
       max-width: 750px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       @include variables.header_700;
       text-align: center;
     }
@@ -79,17 +79,17 @@
     color: variables.$gray_600;
     max-width: 328px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       max-width: 750px;
       @include variables.body_large;
       margin: 0 0 36px 0;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin: 0 0 76px 0;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       text-align: center;
       max-width: 626px;
     }
@@ -98,12 +98,12 @@
       color: variables.$gray_700;
       @include variables.header_500;
 
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         margin: 36px 0;
         @include variables.header_600;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         max-width: 1066px;
         text-align: start;
         margin: 40px 0;
@@ -116,7 +116,7 @@
   }
 
   &__articles {
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       display: flex;
       margin-bottom: 70px;
     }
@@ -136,7 +136,7 @@
       max-width: 700px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin: 0 16px;
     }
   }
@@ -159,7 +159,7 @@
     }
 
     &--last {
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         position: relative;
 
         &:after {
@@ -176,7 +176,7 @@
         }
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         &:after {
           top: 236px;
           right: 96px;
@@ -184,7 +184,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       max-width: none;
     }
   }
@@ -194,20 +194,20 @@
     padding: 0;
     max-width: 328px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       max-width: 690px;
       padding-bottom: 44px;
       margin-bottom: 92px;
       border-bottom: 1px solid variables.$gray_200;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       display: flex;
       max-width: none;
     }
 
     &--second {
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         border-bottom: none;
         padding-bottom: 0;
         margin-bottom: 32px;
@@ -216,7 +216,7 @@
   }
 
   &__container {
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -225,7 +225,7 @@
   }
 
   &__inner {
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       margin-right: 32px;
     }
   }
@@ -236,7 +236,7 @@
     color: variables.$gray_600;
     margin: 0 0 30px 18px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin: 0 32px;
       max-width: 366px;
     }
@@ -247,7 +247,7 @@
       @include variables.header_300;
       font-weight: 600;
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         max-width: 386px;
       }
     }
@@ -258,13 +258,13 @@
     border: 1px solid variables.$gray_200;
     margin-bottom: 32px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: none;
     }
 
     &--right {
       display: none;
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         display: block;
         margin: 0;
         max-width: 256px;
@@ -274,7 +274,7 @@
         }
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         padding: 32px;
         max-width: 450px;
       }
@@ -284,7 +284,7 @@
   &__subsection {
     max-width: 328px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       max-width: 750px;
 
       .price__subtitle {
@@ -296,7 +296,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       max-width: 1276px;
     }
   }

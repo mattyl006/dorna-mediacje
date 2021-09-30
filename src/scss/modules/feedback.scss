@@ -59,13 +59,13 @@
     color: variables.$gray_700;
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_500;
       margin: 0 0 24px 0;
       max-width: 500px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       max-width: 720px;
     }
 

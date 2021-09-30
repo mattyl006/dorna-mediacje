@@ -10,7 +10,7 @@
   align-items: center;
   overflow-x: hidden;
 
-  @media (min-width: 1440px) {
+  @media (min-width: variables.$desktop) {
     padding-top: 110px;
   }
 
@@ -20,14 +20,14 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       flex-direction: row;
       align-items: start;
       justify-content: start;
       margin-bottom: 76px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       position: relative;
 
       &:before {
@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       align-items: start;
       justify-content: start;
       margin: 0 16px;
@@ -60,7 +60,7 @@
     }
 
     &--second {
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         order: -1;
       }
     }
@@ -75,7 +75,7 @@
     max-width: 400px;
     width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
     }
   }
@@ -87,7 +87,7 @@
     margin: 0 0 48px 0;
     border-radius: 4px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: none;
     }
 
@@ -104,13 +104,13 @@
     &--2 {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         display: block;
         width: 330px;
         height: 400px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         width: 567px;
         height: 531px;
       }
@@ -123,13 +123,13 @@
     color: variables.$gray_700;
     max-width: 400px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_600;
       margin: 0 0 20px 0;
       max-width: 330px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       @include variables.header_700;
       margin: 0 0 30px 0;
       max-width: 568px;
@@ -137,7 +137,7 @@
   }
 
   &__special {
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       color: variables.$success_500;
     }
   }
@@ -148,13 +148,13 @@
     margin: 0 0 16px 0;
     max-width: 400px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
       margin: 0 0 20px 0;
       max-width: 330px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin: 0 0 30px 0;
       max-width: 568px;
     }
@@ -166,20 +166,20 @@
     color: variables.$gray_700;
     max-width: 400px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_300;
       margin: 0;
       max-width: 330px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       display: none;
     }
 
     &--2 {
       display: none;
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         display: block;
         max-width: 568px;
         margin-top: 72px;
@@ -191,11 +191,11 @@
       margin-bottom: 24px;
       border-bottom: 1px solid variables.$gray_200;
 
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         padding-bottom: 38px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         display: block;
         max-width: 568px;
         padding-bottom: 0;

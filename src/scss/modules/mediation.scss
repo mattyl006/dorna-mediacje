@@ -12,7 +12,7 @@
     padding: 82px 0 54px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet) {
     padding: 72px 16px 116px;
     position: relative;
   }
@@ -42,14 +42,14 @@
     top: 48px;
     right: 10%;
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       right: 32%;
       top: 20px;
     }
   }
 
   &__main {
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -58,7 +58,7 @@
   }
 
   &__content {
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin-right: 24px;
     }
   }
@@ -71,11 +71,11 @@
     text-align: center;
     color: variables.$gray_600;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       text-align: start;
       padding-left: 6px;
     }
@@ -88,12 +88,12 @@
     margin: 0 auto 30px;
     max-width: 380px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_600;
       max-width: 500px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       @include variables.header_700;
       text-align: start;
       margin: 0 0 30px 0;
@@ -111,12 +111,12 @@
     max-width: 320px;
     margin: 0 auto 28px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
       max-width: 548px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       text-align: start;
       margin: 0 0 28px 0;
     }
@@ -128,11 +128,11 @@
       border-top: 1px solid variables.$gray_200;
       max-width: 328px;
 
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         max-width: 690px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: variables.$desktop) {
         max-width: 568px;
       }
     }
@@ -151,7 +151,7 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       width: 100%;
       position: relative;
 
@@ -168,7 +168,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       width: auto;
       padding: 42px;
 
@@ -183,11 +183,11 @@
     width: 330px;
     margin: 56px 0 98px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       width: 537px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin: 0;
     }
   }

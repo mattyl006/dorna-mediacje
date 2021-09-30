@@ -7,7 +7,7 @@
   align-items: center;
   background-color: variables.$white;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet) {
     position: relative;
 
     &:before {
@@ -36,7 +36,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: variables.$desktop) {
     padding-top: 72px;
   }
 
@@ -47,7 +47,7 @@
     text-transform: uppercase;
     color: variables.$gray_600;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
     }
   }
@@ -59,7 +59,7 @@
     text-align: center;
     color: variables.$gray_700;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_600;
       max-width: 420px;
       position: relative;
@@ -79,7 +79,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       @include variables.header_700;
       max-width: 568px;
 
@@ -98,7 +98,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       width: auto;
       display: grid;
       grid-template-columns: 330px 330px;
@@ -132,7 +132,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       grid-template-columns: 330px 330px 330px;
       grid-template-rows: 1fr 1fr;
       column-gap: 40px;
@@ -154,7 +154,7 @@
     list-style: none;
     margin-bottom: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -192,14 +192,14 @@
 
   &__container {
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: flex;
       padding: 50px 25px 0;
       margin: 0 0 50px 0;
       border-top: 1px solid variables.$gray_200;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       margin: 0 0 130px 0;
     }
   }
@@ -208,7 +208,7 @@
     max-width: 350px;
     margin: 0 20px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       max-width: 566px;
     }
   }
@@ -235,7 +235,7 @@
     max-width: 328px;
     margin: 0 0 16px 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       font-size: 32px;
       line-height: 42px;
       max-width: 396px;
@@ -255,7 +255,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       font-size: 40px;
       line-height: 45px;
       max-width: 568px;

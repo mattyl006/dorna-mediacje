@@ -8,7 +8,7 @@
   flex-direction: column;
   padding: 0 16px 46px;
 
-  @media (min-width: 768px) {
+  @media (min-width: variables.$tablet) {
     z-index: 1;
     background-color: variables.$white;
     box-shadow: variables.$large_shadow;
@@ -18,7 +18,7 @@
     position: relative;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: variables.$desktop_large) {
     padding: 80px 190px;
     max-width: 920px;
   }
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     font-weight: 400;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.body_large;
       max-width: 540px;
       width: 100%;
@@ -45,13 +45,13 @@
     margin: 0 0 30px 0;
     max-width: 320px;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       @include variables.header_600;
       max-width: 540px;
       margin: 0 0 44px 0;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       @include variables.header_700;
       margin: 0 0 72px 0;
     }
@@ -70,7 +70,7 @@
       padding: 10px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       max-width: 570px;
     }
   }
@@ -101,7 +101,7 @@
       @include variables.body_large;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       width: 570px;
     }
   }
@@ -123,7 +123,7 @@
       width: 280px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       width: 570px;
     }
   }
@@ -151,7 +151,7 @@
       height: 40px;
       margin: 0 0 14px 0;
 
-      @media (min-width: 768px) {
+      @media (min-width: variables.$tablet) {
         display: none;
       }
 
@@ -160,14 +160,14 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       margin: 0 24px 0 0;
       width: 110px;
     }
   }
 
   &__privacy-container {
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: flex;
       justify-content: start;
       align-items: center;
@@ -185,7 +185,7 @@
       max-width: 300px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       max-width: 410px;
     }
   }
@@ -215,7 +215,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       justify-content: start;
       align-items: start;
     }
@@ -263,7 +263,7 @@
     margin: 0;
     text-align: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: flex;
       flex-direction: column;
 
@@ -283,7 +283,7 @@
     height: 10px;
     position: relative;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: block;
     }
   }
@@ -291,7 +291,7 @@
   &__map {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: variables.$tablet) {
       display: block;
       position: absolute;
       top: -600px;
@@ -304,7 +304,7 @@
       background-image: url("../assets/img/map.png");
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: variables.$desktop) {
       background-image: url("../assets/img/map-large.png");
     }
   }
