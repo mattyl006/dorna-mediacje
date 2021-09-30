@@ -102,8 +102,14 @@
     }
 
     @media (min-width: variables.$desktop) {
-      margin: 0 16px;
+      max-width: 400px;
+      margin: 0 8px;
       height: 552px;
+    }
+
+    @media (min-width: variables.$desktop_large) {
+      max-width: 450px;
+      margin: 0 16px;
     }
   }
 
@@ -122,6 +128,14 @@
     margin-bottom: 24px;
 
     @media (min-width: variables.$tablet) {
+      width: 386px;
+    }
+
+    @media (min-width: variables.$desktop) {
+      width: 332px;
+    }
+
+    @media (min-width: variables.$desktop_large) {
       width: 386px;
     }
   }
