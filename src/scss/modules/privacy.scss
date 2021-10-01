@@ -1,11 +1,79 @@
 @use "../variables";
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefefe;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C2C3C7;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A1A5;
+}
+
 .privacy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 620px;
 
   &__main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 200px 16px 64px;
+  }
+
+  &__section {
+    margin: 0 0 32px 0;
+  }
+
+  &__header {
+    @include variables.header_400;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  &__paragraph {
+    @include variables.body_medium;
+    margin: 0 0 16px 0;
+
+    &--first {
+      margin: 0 0 32px 0;
+    }
+  }
+
+  &__item {
+    @include variables.body_medium;
+    margin: 0 0 16px 0;
+  }
+
+  &__subitem {
+    @include variables.body_medium;
+    margin: 6px 0;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $success_500;
   }
 }
