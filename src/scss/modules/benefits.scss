@@ -184,6 +184,7 @@
     color: variables.$gray_600;
     max-width: 330px;
     margin: 0;
+    text-align: justify;
 
     @media (max-width: 400px) {
       max-width: 300px;

@@ -131,9 +131,9 @@
 
   &__subtitle {
     @include variables.header_500;
-    margin: 0 0 16px 0;
+    margin: 0 34px 16px 0;
     color: variables.$gray_700;
-    max-width: 400px;
+    max-width: 366px;
 
     @media (min-width: variables.$tablet) {
       @include variables.header_600;
@@ -159,6 +159,7 @@
     color: variables.$gray_600;
     margin: 0 0 16px 0;
     max-width: 400px;
+    text-align: justify;
 
     @media (min-width: variables.$tablet) {
       @include variables.body_large;
@@ -177,6 +178,7 @@
     @include variables.header_200;
     color: variables.$gray_700;
     max-width: 400px;
+    text-align: justify;
 
     @media (min-width: variables.$tablet) {
       @include variables.header_300;

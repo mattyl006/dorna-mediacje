@@ -113,8 +113,8 @@
 
   &__paragraph {
     @include variables.body_medium;
-    text-align: center;
-    max-width: 320px;
+    text-align: justify;
+    max-width: 300px;
     margin: 0 auto 28px;
 
     @media (min-width: variables.$tablet) {
@@ -133,6 +133,10 @@
       padding-top: 24px;
       border-top: 1px solid variables.$gray_200;
       max-width: 328px;
+
+      @media (max-width: 340px) {
+        max-width: 300px;
+      }
 
       @media (min-width: variables.$tablet) {
         max-width: 690px;

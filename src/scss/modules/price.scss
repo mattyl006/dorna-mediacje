@@ -10,13 +10,13 @@
   z-index: 1;
 
   @media (min-width: variables.$tablet) {
-    padding: 0 40px 158px;
+    padding: 32px 40px 158px;
     position: relative;
     background: linear-gradient(180deg, #DBE8EF 0%, #fff 50%);
   }
 
   @media (min-width: variables.$desktop) {
-    padding-bottom: 286px;
+    padding: 0 40px 286px;
   }
 
   &__header {
@@ -119,7 +119,7 @@
     border-radius: 4px;
     box-shadow: variables.$small_shadow;
     margin: 0 0 20px 0;
-    max-width: 328px;
+    max-width: 400px;
     z-index: 2;
 
     @media (min-width: 768px) {
@@ -145,12 +145,16 @@
     color: variables.$gray_600;
     max-width: 328px;
     margin: 0;
+    text-align: justify;
 
     &--margin {
       margin-bottom: 34px;
+      text-align: left;
     }
 
     &--last {
+      text-align: justify;
+
       @media (min-width: variables.$tablet) {
         position: relative;
 
@@ -189,7 +193,7 @@
   &__list {
     margin: 0 0 32px 0;
     padding: 0;
-    max-width: 328px;
+    max-width: 490px;
     z-index: 2;
 
     @media (min-width: variables.$tablet) {
@@ -235,6 +239,7 @@
     font-weight: 400;
     color: variables.$gray_600;
     margin: 0 0 30px 18px;
+    text-align: justify;
 
     @media (min-width: variables.$desktop) {
       margin: 0 32px;
@@ -249,6 +254,17 @@
 
       @media (min-width: variables.$desktop) {
         max-width: 386px;
+      }
+    }
+
+    &--bad-justify {
+      @media (min-width: variables.$desktop) {
+        text-align: left;
+        max-width: 254px;
+      }
+      @media (min-width: variables.$desktop_large) {
+        text-align: justify;
+        max-width: 366px;
       }
     }
   }

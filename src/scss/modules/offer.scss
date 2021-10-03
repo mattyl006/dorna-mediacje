@@ -60,6 +60,7 @@
     @include variables.body_medium;
     max-width: 328px;
     margin: 0 0 76px 0;
+    text-align: justify;
 
     @media (min-width: variables.$tablet) {
       max-width: 750px;

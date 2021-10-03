@@ -57,7 +57,7 @@
     max-width: 400px;
     @include variables.header_400;
     color: variables.$gray_700;
-    text-align: center;
+    text-align: justify;
 
     @media (min-width: variables.$tablet) {
       @include variables.header_500;
