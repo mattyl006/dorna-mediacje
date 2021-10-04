@@ -73,11 +73,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 594px;
-      }
-
-      @media (min-width: variables.$desktop) {
-        width: 502px;
+        width: auto;
       }
     }
 
@@ -85,11 +81,11 @@
       width: 280px;
 
       @media (min-width: variables.$tablet) {
-        width: 374px;
+        width: 336px;
       }
 
       @media (min-width: variables.$desktop) {
-        width: 608px;
+        width: auto;
       }
     }
 
@@ -98,6 +94,10 @@
 
       @media (min-width: variables.$tablet) {
         width: 262px;
+      }
+
+      @media (min-width: variables.$desktop) {
+        width: auto;
       }
     }
 
@@ -109,7 +109,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 800px;
+        width: auto;
       }
     }
 
@@ -121,7 +121,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 668px;
+        width: auto;
       }
     }
 
@@ -133,7 +133,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 648px;
+        width: auto;
       }
     }
 
@@ -145,7 +145,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 540px;
+        width: auto;
       }
     }
 
@@ -157,7 +157,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 650px;
+        width: auto;
       }
     }
 
@@ -169,7 +169,7 @@
       }
 
       @media (min-width: variables.$desktop) {
-        width: 650px;
+        width: auto;
       }
     }
 
@@ -180,7 +180,8 @@
     }
 
     @media (min-width: variables.$desktop) {
-      max-width: none;
+      max-width: 716px;
+      text-align: center;
     }
 
     &--last {
