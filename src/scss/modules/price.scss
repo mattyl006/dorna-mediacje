@@ -129,6 +129,7 @@
     @media (min-width: variables.$desktop) {
       @include variables.header_700;
       text-align: center;
+      width: 490px;
     }
   }
 
@@ -178,6 +179,7 @@
         max-width: 1066px;
         text-align: start;
         margin: 40px 0;
+        width: 844px;
       }
     }
   }
@@ -303,8 +305,8 @@
     }
 
     @media (min-width: variables.$desktop) {
-      display: flex;
-      max-width: none;
+      //display: flex;
+      max-width: 1200px;
     }
 
     &--second {
@@ -390,7 +392,10 @@
 
     @media (min-width: variables.$desktop) {
       margin: 0 32px;
-      max-width: 366px;
+      max-width: none;
+      @media (min-width: variables.$desktop) {
+        width: auto;
+      }
     }
 
     &--special {
@@ -442,6 +447,7 @@
       max-width: 750px;
 
       .price__subtitle {
+        width: 390px;
         margin: 0 0 6px 0;
       }
 
@@ -451,7 +457,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      max-width: 1276px;
+      max-width: 1148px;
     }
   }
 }

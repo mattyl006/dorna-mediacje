@@ -1,7 +1,9 @@
 @use "../variables";
 
 .br-feedback-p2 {
-
+  @media (min-width: variables.$desktop) {
+    display: none;
+  }
 }
 
 .feedback {
@@ -69,6 +71,14 @@
       @media (min-width: variables.$tablet) {
         width: 312px;
       }
+
+      @media (min-width: variables.$desktop) {
+        width: 594px;
+      }
+
+      @media (min-width: variables.$desktop) {
+        width: 502px;
+      }
     }
 
     &--2 {
@@ -76,6 +86,10 @@
 
       @media (min-width: variables.$tablet) {
         width: 374px;
+      }
+
+      @media (min-width: variables.$desktop) {
+        width: 608px;
       }
     }
 
@@ -93,6 +107,10 @@
       @media (min-width: variables.$tablet) {
         width: 318px;
       }
+
+      @media (min-width: variables.$desktop) {
+        width: 800px;
+      }
     }
 
     &--5 {
@@ -100,6 +118,10 @@
 
       @media (min-width: variables.$tablet) {
         width: 340px;
+      }
+
+      @media (min-width: variables.$desktop) {
+        width: 668px;
       }
     }
 
@@ -109,6 +131,10 @@
       @media (min-width: variables.$tablet) {
         width: 332px;
       }
+
+      @media (min-width: variables.$desktop) {
+        width: 648px;
+      }
     }
 
     &--7 {
@@ -116,6 +142,10 @@
 
       @media (min-width: variables.$tablet) {
         width: 318px;
+      }
+
+      @media (min-width: variables.$desktop) {
+        width: 540px;
       }
     }
 
@@ -125,6 +155,10 @@
       @media (min-width: variables.$tablet) {
         width: 342px;
       }
+
+      @media (min-width: variables.$desktop) {
+        width: 650px;
+      }
     }
 
     &--9 {
@@ -132,6 +166,10 @@
 
       @media (min-width: variables.$tablet) {
         width: 356px;
+      }
+
+      @media (min-width: variables.$desktop) {
+        width: 650px;
       }
     }
 
@@ -142,7 +180,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      max-width: 720px;
+      max-width: none;
     }
 
     &--last {
