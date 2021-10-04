@@ -170,7 +170,7 @@
     text-align: justify;
 
     &--1 {
-      width: 292px;
+      width: 280px;
 
       @media (min-width: variables.$tablet) {
         width: 314px;
@@ -269,8 +269,9 @@
         display: block;
         padding-bottom: 0;
         border-bottom: none;
-        margin-bottom: 216px;
-        width: 476px;
+        margin-bottom: 262px;
+        max-width: none;
+        width: 520px;
       }
     }
   }

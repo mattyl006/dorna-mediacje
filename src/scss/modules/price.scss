@@ -22,6 +22,10 @@
   @media (min-width: variables.$tablet) {
     display: none;
   }
+
+  @media (min-width: variables.$desktop) {
+    display: inline;
+  }
 }
 
 .br-price-subtitle-3 {
@@ -143,14 +147,14 @@
     width: 296px;
 
     @media (min-width: 354px) {
-      width: 330px;
+      width: 334px;
     }
 
     @media (min-width: variables.$tablet) {
       max-width: 750px;
       @include variables.body_large;
       margin: 0 0 36px 0;
-      width: 504px;
+      width: 520px;
     }
 
     @media (min-width: variables.$desktop) {
@@ -246,7 +250,7 @@
     }
 
     &--2 {
-      width: 222px;
+      width: 230px;
 
       @media (min-width: variables.$tablet) {
         width: 280px;
@@ -283,7 +287,7 @@
       @media (min-width: variables.$desktop) {
         &:after {
           top: 236px;
-          right: 96px;
+          right: -220px;
         }
       }
     }
@@ -351,7 +355,7 @@
     }
 
     &--2 {
-      width: 284px;
+      width: 288px;
     }
 
     &--3 {
@@ -391,10 +395,14 @@
     }
 
     @media (min-width: variables.$desktop) {
-      margin: 0 32px;
+      margin: 0 0 16px 0;
       max-width: none;
       @media (min-width: variables.$desktop) {
         width: auto;
+
+        &--3 {
+          width: 1180px;
+        }
       }
     }
 
