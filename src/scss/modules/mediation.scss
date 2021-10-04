@@ -82,7 +82,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      text-align: start;
+      text-align: left;
       padding-left: 6px;
     }
   }
@@ -101,7 +101,7 @@
 
     @media (min-width: variables.$desktop) {
       @include variables.header_700;
-      text-align: start;
+      text-align: left;
       margin: 0 0 30px 0;
       max-width: 572px;
     }
@@ -139,7 +139,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      text-align: start;
+      text-align: left;
       margin: 0 0 28px 0;
     }
 

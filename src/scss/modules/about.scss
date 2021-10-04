@@ -30,8 +30,8 @@
 
     @media (min-width: variables.$tablet) {
       flex-direction: row;
-      align-items: start;
-      justify-content: start;
+      align-items: flex-start;
+      justify-content: flex-start;
       margin-bottom: 76px;
     }
 
@@ -58,8 +58,8 @@
     align-items: center;
 
     @media (min-width: variables.$tablet) {
-      align-items: start;
-      justify-content: start;
+      align-items: flex-start;
+      justify-content: flex-start;
       margin: 0 16px;
     }
 

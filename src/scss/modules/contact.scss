@@ -178,7 +178,7 @@
   &__privacy-container {
     @media (min-width: variables.$tablet) {
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: center;
     }
   }
@@ -225,8 +225,8 @@
     align-items: center;
 
     @media (min-width: variables.$tablet) {
-      justify-content: start;
-      align-items: start;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 
