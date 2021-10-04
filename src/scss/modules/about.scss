@@ -1,5 +1,13 @@
 @use "../variables";
 
+.br-about-subtitle3 {
+  display: none;
+
+  @media (min-width: variables.$tablet) {
+    display: inline;
+  }
+}
+
 .about {
   width: 100%;
   padding: 62px 16px 0;
@@ -72,8 +80,7 @@
     font-weight: 400;
     margin: 0 0 10px 0;
     color: variables.$gray_600;
-    max-width: 400px;
-    width: 100%;
+    width: 310px;
 
     @media (min-width: variables.$tablet) {
       @include variables.body_large;
@@ -131,13 +138,14 @@
 
   &__subtitle {
     @include variables.header_500;
-    margin: 0 34px 16px 0;
+    margin: 0 0 16px 0;
     color: variables.$gray_700;
-    max-width: 366px;
+    width: 310px;
 
     @media (min-width: variables.$tablet) {
       @include variables.header_600;
       margin: 0 0 20px 0;
+      width: auto;
       max-width: 330px;
     }
 
@@ -161,6 +169,38 @@
     max-width: 400px;
     text-align: justify;
 
+    &--1 {
+      width: 292px;
+
+      @media (min-width: variables.$tablet) {
+        width: 314px;
+      }
+    }
+
+    &--2 {
+      width: 266px;
+
+      @media (min-width: variables.$tablet) {
+        width: 292px;
+      }
+    }
+
+    &--3 {
+      width: 248px;
+
+      @media (min-width: variables.$tablet) {
+        width: 286px;
+      }
+    }
+
+    &--4 {
+      width: 310px;
+
+      @media (min-width: variables.$tablet) {
+        width: 330px;
+      }
+    }
+
     @media (min-width: variables.$tablet) {
       @include variables.body_large;
       margin: 0 0 20px 0;
@@ -179,10 +219,12 @@
     color: variables.$gray_700;
     max-width: 400px;
     text-align: justify;
+    width: 280px;
 
     @media (min-width: variables.$tablet) {
       @include variables.header_300;
       margin: 0;
+      width: 316px;
       max-width: 330px;
     }
 
@@ -204,9 +246,11 @@
       padding-bottom: 24px;
       margin-bottom: 24px;
       border-bottom: 1px solid variables.$gray_200;
+      width: 310px;
 
       @media (min-width: variables.$tablet) {
         padding-bottom: 38px;
+        width: 286px;
       }
 
       @media (min-width: variables.$desktop) {

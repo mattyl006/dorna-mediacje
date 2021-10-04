@@ -1,5 +1,13 @@
 @use "../variables";
 
+.br-contact-privacy {
+  display: none;
+
+  @media (min-width: 360px) {
+    display: inline;
+  }
+}
+
 .contact {
   width: 100%;
   display: flex;
@@ -47,7 +55,7 @@
 
     @media (min-width: variables.$tablet) {
       @include variables.header_600;
-      max-width: 540px;
+      max-width: 514px;
       margin: 0 0 44px 0;
     }
 
@@ -180,10 +188,10 @@
     margin: 0;
     font-weight: 400;
     color: variables.$gray_600;
-    max-width: 328px;
+    max-width: 326px;
 
     @media (max-width: 360px) {
-      max-width: 300px;
+      max-width: 290px;
     }
 
     @media (min-width: variables.$tablet) {

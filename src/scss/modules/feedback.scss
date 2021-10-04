@@ -1,5 +1,9 @@
 @use "../variables";
 
+.br-feedback-p2 {
+
+}
+
 .feedback {
   width: 300vw;
   display: flex;
@@ -58,6 +62,78 @@
     @include variables.header_400;
     color: variables.$gray_700;
     text-align: justify;
+
+    &--1 {
+      width: 262px;
+
+      @media (min-width: variables.$tablet) {
+        width: 312px;
+      }
+    }
+
+    &--2 {
+      width: 280px;
+
+      @media (min-width: variables.$tablet) {
+        width: 374px;
+      }
+    }
+
+    &--3 {
+      width: 224px;
+
+      @media (min-width: variables.$tablet) {
+        width: 262px;
+      }
+    }
+
+    &--4 {
+      width: 272px;
+
+      @media (min-width: variables.$tablet) {
+        width: 318px;
+      }
+    }
+
+    &--5 {
+      width: 226px;
+
+      @media (min-width: variables.$tablet) {
+        width: 340px;
+      }
+    }
+
+    &--6 {
+      width: 276px;
+
+      @media (min-width: variables.$tablet) {
+        width: 332px;
+      }
+    }
+
+    &--7 {
+      width: 260px;
+
+      @media (min-width: variables.$tablet) {
+        width: 318px;
+      }
+    }
+
+    &--8 {
+      width: 216px;
+
+      @media (min-width: variables.$tablet) {
+        width: 342px;
+      }
+    }
+
+    &--9 {
+      width: 284px;
+
+      @media (min-width: variables.$tablet) {
+        width: 356px;
+      }
+    }
 
     @media (min-width: variables.$tablet) {
       @include variables.header_500;

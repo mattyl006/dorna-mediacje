@@ -153,10 +153,12 @@
   &__item {
     list-style: none;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: variables.$tablet) {
-      display: flex;
-      flex-direction: column;
+      align-items: flex-start;
       width: 100%;
       height: 100%;
       margin-bottom: 0;
@@ -186,7 +188,27 @@
     margin: 0;
     text-align: justify;
 
-    @media (max-width: 400px) {
+    &--2 {
+      width: 264px;
+    }
+
+    &--3 {
+      width: 238px;
+    }
+
+    &--4 {
+      width: 260px;
+    }
+
+    &--5 {
+      width: 300px;
+    }
+
+    &--6 {
+      width: 248px;
+    }
+
+    @media (max-width: 330px) {
       max-width: 300px;
     }
   }
@@ -224,6 +246,15 @@
     @include variables.body_large;
     font-weight: 400;
     margin: 0;
+    text-align: justify;
+
+    &--1 {
+      width: 326px;
+    }
+
+    &--2 {
+      width: 316px;
+    }
   }
 
   &__quote {

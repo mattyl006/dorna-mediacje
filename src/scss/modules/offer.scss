@@ -2,7 +2,7 @@
 
 .offer {
   width: 100%;
-  padding: 42px 16px 62px;
+  padding: 42px 8px 62px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,11 +24,11 @@
     text-transform: uppercase;
     font-weight: 400;
     width: 100%;
-    max-width: 324px;
+    max-width: 304px;
 
     @media (min-width: variables.$tablet) {
       @include variables.body_large;
-      max-width: 746px;
+      max-width: 420px;
     }
 
     @media (min-width: variables.$desktop) {
@@ -43,10 +43,15 @@
     margin: 0 0 16px 0;
     max-width: 328px;
 
+    width: 306px;
+    font-size: 23px;
+
     @media (min-width: variables.$tablet) {
       @include variables.header_600;
       max-width: 750px;
       margin: 0 0 24px 0;
+      width: 424px;
+
     }
 
     @media (min-width: variables.$desktop) {
@@ -61,11 +66,14 @@
     max-width: 328px;
     margin: 0 0 76px 0;
     text-align: justify;
+    width: 304px;
 
     @media (min-width: variables.$tablet) {
       max-width: 750px;
       @include variables.body_large;
       margin: 0 0 90px 0;
+
+      width: 354px;
     }
 
     @media (min-width: variables.$desktop) {

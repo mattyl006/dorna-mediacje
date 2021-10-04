@@ -117,6 +117,22 @@
     max-width: 300px;
     margin: 0 auto 28px;
 
+    &--1 {
+      width: 238px;
+
+      @media (min-width: variables.$tablet) {
+        width: 530px;
+      }
+    }
+
+    &--2 {
+      width: 226px;
+
+      @media (min-width: variables.$tablet) {
+        width: 544px;
+      }
+    }
+
     @media (min-width: variables.$tablet) {
       @include variables.body_large;
       max-width: 548px;
@@ -132,14 +148,11 @@
       margin-bottom: 42px;
       padding-top: 24px;
       border-top: 1px solid variables.$gray_200;
-      max-width: 328px;
-
-      @media (max-width: 340px) {
-        max-width: 300px;
-      }
+      width: 260px;
 
       @media (min-width: variables.$tablet) {
-        max-width: 690px;
+        max-width: none;
+        width: 500px;
       }
 
       @media (min-width: variables.$desktop) {

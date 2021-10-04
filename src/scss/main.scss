@@ -52,26 +52,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-br {
-  display: none;
-
-  //@media (min-width: $tablet) {
-  //  display: inline;
-  //}
-}
-
-.br-always {
-  display: inline;
-}
-
-.br-mobile {
-  display: inline;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
 .main {
   display: flex;
   flex-direction: column;
