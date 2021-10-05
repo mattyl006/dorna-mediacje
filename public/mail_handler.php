@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST['submit'])){
-    $to = "tylka6946@gmail.com"; // this is your Email address
+    $to = "joanna.dorna@mediacje.pila.pl"; // this is your Email address
     $from = $_POST['mail']; // this is the sender's Email address
     $first_name = $_POST['name'];
     $telephone = $_POST['telephone'];
     $subject = "Wiadomość z formularza";
     $subject2 = "Kopia wiadomości z formularza";
-    $message = "Od:" . $first_name . " telefon:" . $telephone . " Wiadomość:" . "\n\n" . $_POST['message'];
-    $message2 = "Kopia wiadomości: " . $first_name . "\n\n" . $_POST['message'];
+    $message = "Od:" . $from . " Imię: " . $first_name . " telefon: " . $telephone . " Wiadomość: " . "\n\n" . $_POST['message'];
+    $message2 = "Dziękujemy za wiadomość, odezwiemy się niebawem. Kopia wiadomości: " . $first_name . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
