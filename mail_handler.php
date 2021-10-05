@@ -13,10 +13,15 @@
             $telephone = $_POST['telephone'];
             $subject = "Wiadomość z formularza";
             $subject2 = "Kopia wiadomości z formularza";
+
             $message = "Od:" . $from . " Imię: " . $first_name . " telefon: " . $telephone . " Wiadomość: " . "\n\n" . $_POST['message'];
             $message2 = "Dziękujemy za wiadomość, odezwiemy się niebawem. Kopia wiadomości: " . $first_name . "\n\n" . $_POST['message'];
-            $headers = "From:" . $from;
-            $headers2 = "From:" . $to;
+
+            $headers = "Content-Transfer-Encodin: 8bitr\n"
+            $headers .= "Content-type: text/html; charset=utf-8r\n";
+
+            $headers2 = $headers . "From:" . $to;
+            $headers .= "From:" . $from;
 
 
             imap_mail($to,$subject,$message,$headers);
