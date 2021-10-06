@@ -57,8 +57,8 @@
                     $subject = "Kontakt z formularza";
                     $subject2 = "Kontakt z formularza mediacje.pila.pl";
 
-                    $message = "Od: " . $from . "<br>Imię: " . $first_name . "<br>telefon: " . $telephone . "<br>Wiadomość: " . "<br><br>" . $_POST['message'];
-                    $message2 = "Dziękuję za kontakt, odezwę się niebawem. <br>Kopia wiadomości: " . $first_name . "<br><br>" . $_POST['message'];
+                    $message = "Od: " . $from . "<br>Imię: " . $first_name . "<br>Telefon: " . $telephone . "<br><br>Wiadomość: " . "<br><br>" . $_POST['message'];
+                    $message2 = "Dziękuję za kontakt, odezwę się niebawem. <br><br>Kopia wiadomości: " . $first_name . "<br><br>" . $_POST['message'];
 
                     $headers = "Content-type: text/html; charset=utf-8r\n";
                     $headers .= "Content-Transfer-Encodin: 8bitr\n";
