@@ -67,10 +67,10 @@
                     $headers .= "From:" . $from;
 
                     if(mail($to,$subject,$message,$headers) and mail($from,$subject2,$message2,$headers2)) {
-                        echo "<h1 class="success">Sukces</h1>";
+                        echo "<h1 class='success'>Sukces</h1>";
                         echo "<p>Wiadomość wysłana pomyślnie. Dziękuję " . $first_name . ", odezwę się niebawem.</p>";
                     } else {
-                        echo "<h1 class="failure">Coś poszło nie tak</h1>";
+                        echo "<h1 class='failure'>Coś poszło nie tak</h1>";
                         echo "<p>Wiadomość nie została wysłana, proszę spróbować jeszcze raz</p>";
                     }
                 }
