@@ -618,25 +618,25 @@
             <label class="contact__label" for="mail">
               Email*
             </label>
-            <input class="contact__input" id="mail" name="mail" placeholder="Twój adres email"/>
+            <input class="contact__input" type="email" title="Proszę wpisać poprawny adres email." required id="mail" name="mail" placeholder="Twój adres email"/>
           </div>
           <div class="contact__form-container">
             <label class="contact__label" for="name">
               Imię*
             </label>
-            <input class="contact__input" id="name" name="name" placeholder="Twoje imię" />
+            <input class="contact__input" id="name" name="name" required title="Proszę wpisać swoję imię." placeholder="Twoje imię" />
           </div>
           <div class="contact__form-container">
             <label class="contact__label" for="telephone">
               Telefon*
             </label>
-            <input class="contact__input" id="telephone" name="telephone" placeholder="Numer telefonu" />
+            <input class="contact__input" id="telephone" title="Proszę wpisać poprawny numer telefonu." type="tel" required name="telephone" placeholder="Numer telefonu" />
           </div>
           <div class="contact__form-container">
             <label class="contact__label" for="message">
               Wiadomość
             </label>
-            <textarea class="contact__textarea" id="message" name="message" placeholder="Tutaj wpisz treść wiadomości"></textarea>
+            <textarea class="contact__textarea" id="message" name="message" required title="Proszę wpisać treść wiadomości." placeholder="Tutaj wpisz treść wiadomości"></textarea>
           </div>
           <div class="contact__privacy-container">
             <input class="contact__button" value="Wyślij" name="submit" type="submit">
